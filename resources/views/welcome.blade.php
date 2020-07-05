@@ -1,4 +1,14 @@
-<!DOCTYPE html>
+@extends('layouts.master')
+
+@section('content')
+    <div>
+        <h3>Struktur database untuk portal blog ini adalah</h3>
+        <img src="{{asset('/img/ERD.png')}} " class="card-img-top" alt="..." style="width: 800px; heigth: auto; display: block;">
+        <a href="/artikel" class="btn btn-sm btn-primary" style="margin: 20px auto">Get Started</a>
+    </div>
+@endsection
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -83,6 +93,7 @@
                 <div class="title m-b-md">
                     Sanbercode
                 </div>
+                <img src="{{asset('/img/ERD.png')}} " class="card-img-top" alt="...">
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
@@ -97,4 +108,4 @@
             </div>
         </div>
     </body>
-</html>
+</html> --}}
